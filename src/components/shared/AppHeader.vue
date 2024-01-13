@@ -3,14 +3,14 @@ import ThemeSwitcher from '../ThemeSwitcher';
 import HireMeModal from '../HireMeModal.vue';
 import feather from 'feather-icons';
 import AppHeaderLinks from './AppHeaderLinks.vue';
-import Button from '../reusable/Button.vue';
+// import Button from '../reusable/Button.vue';
 
 export default {
 	components: {
 		ThemeSwitcher,
 		HireMeModal,
 		AppHeaderLinks,
-		Button,
+		// Button,
 	},
 	data() {
 		return {
@@ -85,7 +85,8 @@ export default {
 				<!-- Header logos -->
 				<div>
 					<router-link to="/"
-						><img
+						>
+						<!-- <img
 							v-if="theme === 'light'"
 							src="@/assets/images/logo-dark.svg"
 							class="w-36"
@@ -96,7 +97,7 @@ export default {
 							src="@/assets/images/logo-light.svg"
 							class="w-36"
 							alt="Light Logo"
-						/>
+						/> -->
 					</router-link>
 				</div>
 
@@ -144,14 +145,14 @@ export default {
 				class="hidden sm:flex justify-between items-center flex-col md:flex-row"
 			>
 				<!-- Hire me button -->
-				<div class="hidden md:block">
+				<!-- <div class="hidden md:block">
 					<Button
 						title="Hire Me"
 						class="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
 						@click="showModal()"
 						aria-label="Hire Me Button"
 					/>
-				</div>
+				</div> -->
 
 				<!-- Theme switcher large screen -->
 				<theme-switcher
