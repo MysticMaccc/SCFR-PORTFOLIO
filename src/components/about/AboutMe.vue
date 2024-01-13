@@ -1,17 +1,19 @@
 <script>
+import DownloadCV from '../shared/DownloadCV.vue';
 export default {
+  components: { DownloadCV },
 	setup() {
 		return {
 			bios: [
 				{
 					id: 1,
 					bio:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+						'Greetings! I am Sherwin, a full stack web developer with an impressive track record spanning six years. My passion for crafting robust and efficient web solutions has driven me to master a diverse array of technologies.',
 				},
 				{
 					id: 2,
 					bio:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+						'Throughout my career, I have consistently delivered high-quality, scalable, and user-centric web applications. My commitment to staying abreast of the latest industry trends ensures that the solutions I develop are not only cutting-edge but also aligned with the evolving needs of users. With a keen eye for detail and a dedication to excellence, I am well-equipped to tackle complex challenges and contribute to the success of any web development project.',
 				},
 			],
 		};
@@ -28,6 +30,7 @@ export default {
 				class="rounded-xl w-96"
 				alt=""
 			/>
+			<DownloadCV />
 		</div>
 
 		<!-- About details -->
@@ -40,5 +43,8 @@ export default {
 				{{ bio.bio }}
 			</p>
 		</div>
+
+		
+
 	</div>
 </template>

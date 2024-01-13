@@ -21,12 +21,13 @@ export default {
 		<div
 			class="font-general-regular container mx-auto py-20 block sm:flex sm:justify-between sm:items-center"
 		>
+			<div class="mb-20 sm:mb-0"></div>
 			<!-- Years of experience counter -->
 			<div class="mb-20 sm:mb-0">
 				<counter
 					ref="counter"
 					:startAmount="0"
-					:endAmount="12"
+					:endAmount="6"
 					:duration="1"
 					:autoinit="true"
 					@finished="alert(`Counting finished!`)"
@@ -41,7 +42,7 @@ export default {
 			</div>
 
 			<!-- GitHub stars counter -->
-			<div class="mb-20 sm:mb-0">
+			<!-- <div class="mb-20 sm:mb-0">
 				<counter
 					ref="counter"
 					:startAmount="0"
@@ -56,10 +57,10 @@ export default {
 					class="block text-md text-ternary-dark dark:text-ternary-light"
 					>{{ githubTitle }}</span
 				>
-			</div>
+			</div> -->
 
 			<!-- Positive feedback counter -->
-			<div class="mb-20 sm:mb-0">
+			<!-- <div class="mb-20 sm:mb-0">
 				<counter
 					ref="counter"
 					:startAmount="0"
@@ -75,14 +76,14 @@ export default {
 				>
 					{{ feedbackTitle }}
 				</span>
-			</div>
+			</div> -->
 
 			<!-- Projects completed counter -->
 			<div class="mb-20 sm:mb-0">
 				<counter
 					ref="counter"
 					:startAmount="0"
-					:endAmount="77"
+					:endAmount="12"
 					:duration="1"
 					:autoinit="true"
 					@finished="alert(`Counting finished!`)"
@@ -94,6 +95,8 @@ export default {
 					{{ projectsTitle }}
 				</span>
 			</div>
+			<div class="mb-20 sm:mb-0"></div>
+			
 		</div>
 	</div>
 </template>
