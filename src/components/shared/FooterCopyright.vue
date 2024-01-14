@@ -3,8 +3,8 @@ export default {
 	data: () => {
 		return {
 			copyrightDate: new Date().getFullYear(),
-			projectName: 'Vue.js & Tailwind CSS Portfolio',
-			author: 'Sherwin Roxas',
+			projectName: 'Vue.js & Tailwind CSS',
+			author: 'Sherwin Christopher F. Roxas',
 		};
 	},
 };
@@ -15,14 +15,8 @@ export default {
 		<div
 			class="font-general-regular text-lg text-ternary-dark dark:text-ternary-light"
 		>
-			&copy; {{ copyrightDate }}.
-			<a
-				href="#"
-				target="__blank"
-				class="font-general-medium hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 duration-500"
-			>
-				{{ projectName }}
-			</a>
+			&copy; {{ copyrightDate }}
+			
 			. Developed by
 			<a
 				href="https://sfr.online"
@@ -30,6 +24,14 @@ export default {
 				class="font-general-medium text-secondary-dark dark:text-secondary-light uppercase hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 duration-500"
 				>{{ author }}</a
 			>
+            using 
+			<a
+				href="#"
+				target="__blank"
+				class="font-general-medium hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 duration-500"
+			>
+				{{ projectName }}
+			</a>
 		</div>
 	</div>
 </template>

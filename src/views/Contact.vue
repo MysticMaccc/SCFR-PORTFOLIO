@@ -18,22 +18,22 @@ export default {
 				},
 				{
 					id: 2,
-					name: 'sherwinroxas602@gmail.com',
-					icon: 'mail',
-				},
-				{
-					id: 3,
 					name: 'cosmicsher96@gmail.com',
 					icon: 'mail',
 				},
 				{
+					id: 3,
+					name: 'sherwinroxas602@gmail.com',
+					icon: 'mail',
+				},
+				{
 					id: 4,
-					name: '(+63)950-909-8702',
+					name: '(+63)994-215-2415',
 					icon: 'phone',
 				},
 				{
 					id: 5,
-					name: '(+63)994-215-2415',
+					name: '(+63)950-909-8702',
 					icon: 'phone',
 				},
 			],
