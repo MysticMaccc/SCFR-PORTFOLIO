@@ -22,7 +22,7 @@ export default {
 			} else if (this.searchProject) {
 				return this.filterProjectsBySearch();
 			}
-			return this.projects;
+			return this.allProject();
 		},
 	},
 	methods: {
@@ -33,14 +33,17 @@ export default {
 					item.category.charAt(0).toUpperCase() +
 					item.category.slice(1);
 				console.log(category);
-				return category.includes(this.selectedCategory);
+				return category.includes(this.selectedCategory) && item.isActive;
 			});
 		},
 		// Filter projects by title search
 		filterProjectsBySearch() {
 			let project = new RegExp(this.searchProject, 'i');
-			return this.projects.filter((el) => el.title.match(project));
+			return this.projects.filter((el) => el.title.match(project) && el.isActive);
 		},
+		allProject () {
+			return this.projects.filter((el) => el.isActive);
+		}
 	},
 	mounted() {
 		feather.replace();
